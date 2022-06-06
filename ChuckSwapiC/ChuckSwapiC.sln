@@ -3,15 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32319.34
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChuckSwapiC.Web", "ChuckSwapiC.Web\ChuckSwapiC.Web.csproj", "{9F505AF5-CECE-48EF-8336-93AF20CDB7CF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChuckSwapiC.Web", "ChuckSwapiC.Web\ChuckSwapiC.Web.csproj", "{9F505AF5-CECE-48EF-8336-93AF20CDB7CF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChuckSwapiC.Application", "ChuckSwapiC.Application\ChuckSwapiC.Application.csproj", "{4C830A93-4586-4543-ACCC-3B6E0AF426B1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChuckSwapiC.Application", "ChuckSwapiC.Application\ChuckSwapiC.Application.csproj", "{4C830A93-4586-4543-ACCC-3B6E0AF426B1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChuckSwapiC.Configuration", "ChuckSwapiC.Configuration\ChuckSwapiC.Configuration.csproj", "{AE07791E-7333-4FD1-89B3-ADDA0D888FA2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChuckSwapiC.Configuration", "ChuckSwapiC.Configuration\ChuckSwapiC.Configuration.csproj", "{AE07791E-7333-4FD1-89B3-ADDA0D888FA2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChuckSwapiC.Integration", "ChuckSwapiC.Integration\ChuckSwapiC.Integration.csproj", "{6DC86161-6EE0-434C-8FAA-B3E7464329E3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChuckSwapiC.Integration", "ChuckSwapiC.Integration\ChuckSwapiC.Integration.csproj", "{6DC86161-6EE0-434C-8FAA-B3E7464329E3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChuckSwapiC.Tests", "ChuckSwapiC.UnitTests\ChuckSwapiC.Tests.csproj", "{AAC41BAB-C526-4021-9B18-3CACBC328524}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChuckSwapiC.Tests", "ChuckSwapiC.UnitTests\ChuckSwapiC.Tests.csproj", "{AAC41BAB-C526-4021-9B18-3CACBC328524}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
