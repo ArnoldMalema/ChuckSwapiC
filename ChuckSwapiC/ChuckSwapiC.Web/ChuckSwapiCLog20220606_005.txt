@@ -1,7 +1,0 @@
-2022-06-06 15:48:53.904 +02:00 [INF] Route matched with {action = "Get", controller = "Swapi"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller ChuckSwapiC.Web.Controller.SwapiController (ChuckSwapiC.Web).
-2022-06-06 15:48:53.972 +02:00 [INF] Executing action method ChuckSwapiC.Web.Controller.SwapiController.Get (ChuckSwapiC.Web) - Validation state: "Valid"
-2022-06-06 15:48:57.545 +02:00 [INF] Executed action method ChuckSwapiC.Web.Controller.SwapiController.Get (ChuckSwapiC.Web), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 3565.486ms.
-2022-06-06 15:48:57.550 +02:00 [INF] Executing ObjectResult, writing value of type 'ChuckSwapiC.Application.Utilities.DataObjects.ResultBase'.
-2022-06-06 15:48:57.575 +02:00 [INF] Executed action ChuckSwapiC.Web.Controller.SwapiController.Get (ChuckSwapiC.Web) in 3665.1227ms
-2022-06-06 15:48:57.576 +02:00 [INF] Executed endpoint 'ChuckSwapiC.Web.Controller.SwapiController.Get (ChuckSwapiC.Web)'
-2022-06-06 15:48:57.576 +02:00 [INF] Request finished in 3717.169ms 200 application/json; charset=utf-8

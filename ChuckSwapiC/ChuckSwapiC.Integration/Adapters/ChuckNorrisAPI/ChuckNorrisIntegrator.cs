@@ -27,6 +27,13 @@ namespace ChuckSwapiC.Integration.Adapters.ChuckNorrisAPI
             return httpAdapter.Get<List<string>>(url, false, null, true);
         }
 
+        public List<ChuckNorrisSearchResult> GetRandomJokeFromCategory(string category)
+        {
+            var url = $"{applicationSettings.ChuckNorrisUrl}/jokes/random?category={category}";
+            return httpAdapter.Get<ChuckNorrisSearchResponse>(url, false, null, true).Result;
+
+        }
+
         public List<ChuckNorrisSearchResult> Search(string tag)
         {
             var url = $"{applicationSettings.ChuckNorrisUrl}/jokes/search?query={tag}";

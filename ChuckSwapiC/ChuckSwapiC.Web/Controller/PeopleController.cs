@@ -6,21 +6,20 @@ namespace ChuckSwapiC.Web.Controller
 {
     [ApiController]
     [Route("api/v1/[controller]")]
-    public class ChuckController : ControllerBase
+    public class PeopleController : ControllerBase
     {
         private readonly IntegrationQueriesService integrationQueriesService;
 
-        public ChuckController(IntegrationQueriesService integrationQueriesService)
+        public PeopleController(IntegrationQueriesService integrationQueriesService)
         {
             this.integrationQueriesService = integrationQueriesService;
         }
-
         [HttpGet]
         [ProducesResponseType(StatusCodes.Status200OK)]
-        [Route("categories")]
+        [Route("people")]
         public IActionResult Get()
         {
-            return Ok(integrationQueriesService.GetCnCategories());
+            return Ok(integrationQueriesService.GetAllSwPeople());
         }
     }
 }

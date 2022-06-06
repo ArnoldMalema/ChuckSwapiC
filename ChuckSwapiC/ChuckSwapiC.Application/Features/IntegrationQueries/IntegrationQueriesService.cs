@@ -21,6 +21,10 @@ namespace ChuckSwapiC.Application.Features.IntegrationQueries
         {
             return new ResultBase(true, "", cnAdapter.GetCategories());
         }
+        public ResultBase GetJokeFromRandomCategory(string category)
+        {
+            return new ResultBase(true, "", cnAdapter.GetRandomJokeFromCategory(category));
+        }
 
         public ResultBase GetAllSwPeople()
         {

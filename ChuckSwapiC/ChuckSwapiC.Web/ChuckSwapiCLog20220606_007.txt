@@ -1,2 +1,0 @@
-2022-06-06 15:49:39.113 +02:00 [INF] Executed endpoint 'ChuckSwapiC.Web.Controller.SearchController.Get (ChuckSwapiC.Web)'
-2022-06-06 15:49:39.120 +02:00 [INF] Request finished in 5521.8668ms 200 application/json; charset=utf-8

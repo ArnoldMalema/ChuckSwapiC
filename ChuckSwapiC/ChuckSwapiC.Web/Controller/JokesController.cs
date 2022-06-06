@@ -6,20 +6,29 @@ namespace ChuckSwapiC.Web.Controller
 {
     [ApiController]
     [Route("api/v1/[controller]")]
-    public class SwapiController : ControllerBase
+    public class JokesController : ControllerBase
     {
         private readonly IntegrationQueriesService integrationQueriesService;
 
-        public SwapiController(IntegrationQueriesService integrationQueriesService)
+        public JokesController(IntegrationQueriesService integrationQueriesService)
         {
             this.integrationQueriesService = integrationQueriesService;
         }
+
         [HttpGet]
         [ProducesResponseType(StatusCodes.Status200OK)]
-        [Route("people")]
+        [Route("categories")]
         public IActionResult Get()
         {
-            return Ok(integrationQueriesService.GetAllSwPeople());
+            return Ok(integrationQueriesService.GetCnCategories());
+        }
+
+        [HttpGet]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [Route("category")]
+        public IActionResult Get(string category)
+        {
+            return Ok(integrationQueriesService.GetCnCategories());
         }
     }
 }
