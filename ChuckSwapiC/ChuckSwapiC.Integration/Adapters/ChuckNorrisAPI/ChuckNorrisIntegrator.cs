@@ -29,7 +29,7 @@ namespace ChuckSwapiC.Integration.Adapters.ChuckNorrisAPI
 
         public List<ChuckNorrisSearchResult> Search(string tag)
         {
-            var url = $"{applicationSettings.StarWarsUrl}/jokes/search={tag}";
+            var url = $"{applicationSettings.ChuckNorrisUrl}/jokes/search?query={tag}";
 
             return httpAdapter.Get<ChuckNorrisSearchResponse>(url, false, null, true).Result;
         }

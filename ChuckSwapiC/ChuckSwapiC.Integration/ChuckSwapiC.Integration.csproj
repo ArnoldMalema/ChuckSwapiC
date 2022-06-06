@@ -5,6 +5,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Moq" Version="4.18.1" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\ChuckSwapiC.Application\ChuckSwapiC.Application.csproj" />
   </ItemGroup>
 

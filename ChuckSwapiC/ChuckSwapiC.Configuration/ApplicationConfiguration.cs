@@ -1,7 +1,12 @@
 ﻿using System;
 using System.IO;
+using ChuckSwapiC.Application.Features.IntegrationQueries;
+using ChuckSwapiC.Application.Features.IntegrationQueries.Adapters;
+using ChuckSwapiC.Application.Utilities.Http;
 using ChuckSwapiC.Application.Utilities.Settings;
 using ChuckSwapiC.Configuration.Services;
+using ChuckSwapiC.Integration.Adapters.ChuckNorrisAPI;
+using ChuckSwapiC.Integration.Adapters.StarWarsAPI;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
@@ -16,7 +21,11 @@ namespace ChuckSwapiC.Configuration
 
         private void SetupDependencies(IServiceCollection serviceCollection)
         {
-            //Todo
+            serviceCollection.AddScoped<IHttpAdapter, HttpAdapter>();
+            serviceCollection.AddScoped<IChuckNorrisAdapter, ChuckNorrisIntegrator>();
+            serviceCollection.AddScoped<IStarWarsAdapter, StarWarsIntegrator>();
+            serviceCollection.AddScoped<IntegrationQueriesService>();
+
         }
 
         public void RegisterServices(IConfiguration configuration, IServiceCollection serviceCollection)

@@ -21,6 +21,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ChuckSwapiC.Application\ChuckSwapiC.Application.csproj" />
+    <ProjectReference Include="..\ChuckSwapiC.Integration\ChuckSwapiC.Integration.csproj" />
   </ItemGroup>
 
 </Project>
