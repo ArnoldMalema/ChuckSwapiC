@@ -28,7 +28,7 @@ namespace ChuckSwapiC.Web.Controller
         [Route("category")]
         public IActionResult Get(string category)
         {
-            return Ok(integrationQueriesService.GetCnCategories());
+            return Ok(integrationQueriesService.GetJokeFromRandomCategory(category));
         }
     }
 }

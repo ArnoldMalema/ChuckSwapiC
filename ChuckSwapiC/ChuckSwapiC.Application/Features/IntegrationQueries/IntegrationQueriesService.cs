@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Text;
 using ChuckSwapiC.Application.Features.IntegrationQueries.Adapters;
+using ChuckSwapiC.Application.Features.IntegrationQueries.DataObjects;
 using ChuckSwapiC.Application.Utilities.DataObjects;
 
 namespace ChuckSwapiC.Application.Features.IntegrationQueries
@@ -23,7 +24,7 @@ namespace ChuckSwapiC.Application.Features.IntegrationQueries
         }
         public ResultBase GetJokeFromRandomCategory(string category)
         {
-            return new ResultBase(true, "", cnAdapter.GetRandomJokeFromCategory(category));
+            return new ResultBase(true, "", new List<ChuckNorrisSearchResult>(){ cnAdapter.GetRandomJokeFromCategory(category)});
         }
 
         public ResultBase GetAllSwPeople()

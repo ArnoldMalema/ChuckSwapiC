@@ -4,16 +4,31 @@
   <mat-tab label="Chuck Norris"> 
     <div class="col-md-6">
         <button type="submit" (click)="CnQuery()">Chuck Norris Joke Categories</button> 
+        <mat-form-field *ngIf="showCategoryList">
+          <mat-label >Select Category</mat-label>
+          <mat-select formControlName="SelectValue" required>
+              <mat-option *ngFor="let category of categories" (click)="GetRandomJoke(category)">
+                {{category}}
+              </mat-option>
+          </mat-select>
+          
+      </mat-form-field>
+      <mat-label >{{randomJoke?.Value}}</mat-label>
     </div>              
   </mat-tab>
   <mat-tab label="Star Wars"> 
     <div class="col-md-6">
-        <!---<button type="submit" (click)="SwQuery()">Star Wars People</button> -->
+        <button type="submit" (click)="SwQuery()">Star Wars People</button>
+        <mat-label *ngFor="let result of starWarsPeople">{{result.Name}}</mat-label>
+
     </div>              
   </mat-tab>
   <mat-tab label="Search"> 
     <div class="col-md-6">
-        <!---<button type="submit" (click)="Search()">Search</button> -->
+      <input matInput type="text" id="currentSearch">
+        <button type="submit" (click)="Search()" >Search</button>
+      <mat-label *ngFor="let result of searchResult">{{result}}</mat-label>
+
     </div>              
   </mat-tab>
 </mat-tab-group>

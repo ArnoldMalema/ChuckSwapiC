@@ -1,33 +1,32 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { MatFormFieldModule } from '@angular/material/form-field'; 
 import { AppComponent } from './app.component';
-import { ChuckNorrisQueryComponent } from './chuck-norris-query/chuck-norris-query.component';
-import { StarWarsQueryComponent } from './star-wars-query/star-wars-query.component';
-import { SearchQueryComponent } from './search-query/search-query.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatSliderModule } from '@angular/material/slider';
 import {MatTabsModule} from '@angular/material/tabs';
-import { RouterModule } from '@angular/router';
+import { Settings } from './services/_settings';
+import { ChuckSwApiService } from './services/chuck-sw-api.service';
+import { HttpClientModule } from '@angular/common/http';
+import {MatSelectModule } from '@angular/material/select';
+
+
 @NgModule({
   declarations: [
-    AppComponent,
-    ChuckNorrisQueryComponent,
-    StarWarsQueryComponent,
-    SearchQueryComponent
+    AppComponent
   ],
   imports: [
-    MatSliderModule,
-    MatTabsModule,
     BrowserModule,
-    RouterModule.forRoot([
-      {path: 'chuck-norris-query', component: ChuckNorrisQueryComponent},
-      {path: 'star-wars-query', component: StarWarsQueryComponent},
-      {path: 'search-query', component: SearchQueryComponent},
-    ]),
-    BrowserAnimationsModule
+    MatFormFieldModule,
+    HttpClientModule,
+    BrowserAnimationsModule,
+    MatSelectModule,
+    MatTabsModule
   ],
-  providers: [],
+  providers: [
+    Settings,
+    ChuckSwApiService
+  ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
+

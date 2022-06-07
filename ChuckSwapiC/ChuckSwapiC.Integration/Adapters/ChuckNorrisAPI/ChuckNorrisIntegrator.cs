@@ -27,10 +27,10 @@ namespace ChuckSwapiC.Integration.Adapters.ChuckNorrisAPI
             return httpAdapter.Get<List<string>>(url, false, null, true);
         }
 
-        public List<ChuckNorrisSearchResult> GetRandomJokeFromCategory(string category)
+        public ChuckNorrisSearchResult GetRandomJokeFromCategory(string category)
         {
             var url = $"{applicationSettings.ChuckNorrisUrl}/jokes/random?category={category}";
-            return httpAdapter.Get<ChuckNorrisSearchResponse>(url, false, null, true).Result;
+            return httpAdapter.Get<ChuckNorrisSearchResult>(url, false, null, true);
 
         }
 

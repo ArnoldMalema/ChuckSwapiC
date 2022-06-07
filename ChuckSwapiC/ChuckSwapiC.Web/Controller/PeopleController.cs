@@ -16,7 +16,6 @@ namespace ChuckSwapiC.Web.Controller
         }
         [HttpGet]
         [ProducesResponseType(StatusCodes.Status200OK)]
-        [Route("people")]
         public IActionResult Get()
         {
             return Ok(integrationQueriesService.GetAllSwPeople());

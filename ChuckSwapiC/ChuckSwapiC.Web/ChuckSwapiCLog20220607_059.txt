@@ -1,0 +1,8 @@
+2022-06-07 20:27:14.315 +02:00 [INF] Executing action method ChuckSwapiC.Web.Controller.SearchController.Get (ChuckSwapiC.Web) - Validation state: "Valid"
+2022-06-07 20:28:21.411 +02:00 [INF] Executed action method ChuckSwapiC.Web.Controller.SearchController.Get (ChuckSwapiC.Web), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 67086.0537ms.
+2022-06-07 20:28:21.416 +02:00 [INF] Executing ObjectResult, writing value of type 'ChuckSwapiC.Application.Utilities.DataObjects.ResultBase'.
+2022-06-07 20:28:23.422 +02:00 [INF] Executed action ChuckSwapiC.Web.Controller.SearchController.Get (ChuckSwapiC.Web) in 69177.1947ms
+2022-06-07 20:28:23.423 +02:00 [INF] Executed endpoint 'ChuckSwapiC.Web.Controller.SearchController.Get (ChuckSwapiC.Web)'
+2022-06-07 20:28:23.423 +02:00 [INF] Request finished in 69244.0108ms 200 application/json; charset=utf-8
+2022-06-07 20:29:08.180 +02:00 [INF] Request starting HTTP/2.0 GET https://localhost:44347/api/v1/search/?tag=adam  
+2022-06-07 20:29:08.180 +02:00 [INF] CORS policy execution successful.

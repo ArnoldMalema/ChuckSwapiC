@@ -14,7 +14,7 @@ export class SwPeople
        Species : string = "";
        Vehicles : string = "";
        Starships : string = "";
-        Created : DateTime;
+        Created : string = "";
         Edited : string = "";
         Url : string = "";
     }

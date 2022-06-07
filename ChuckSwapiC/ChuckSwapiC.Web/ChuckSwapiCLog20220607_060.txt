@@ -1,0 +1,6 @@
+2022-06-07 20:29:08.182 +02:00 [INF] Executing endpoint 'ChuckSwapiC.Web.Controller.SearchController.Get (ChuckSwapiC.Web)'
+2022-06-07 20:29:08.196 +02:00 [INF] Route matched with {action = "Get", controller = "Search"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get(System.String) on controller ChuckSwapiC.Web.Controller.SearchController (ChuckSwapiC.Web).
+2022-06-07 20:29:08.218 +02:00 [INF] Executing action method ChuckSwapiC.Web.Controller.SearchController.Get (ChuckSwapiC.Web) - Validation state: "Valid"
+2022-06-07 20:29:17.614 +02:00 [INF] Executed action method ChuckSwapiC.Web.Controller.SearchController.Get (ChuckSwapiC.Web), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 9395.8416ms.
+2022-06-07 20:29:17.621 +02:00 [INF] Executing ObjectResult, writing value of type 'ChuckSwapiC.Application.Utilities.DataObjects.ResultBase'.
+2022-06-07 20:29:17.625 +02:00 [INF] Executed action ChuckSwapiC.Web.Controller.SearchController.Get (ChuckSwapiC.Web) in 9428.2431ms

@@ -8,7 +8,7 @@ namespace ChuckSwapiC.Application.Features.IntegrationQueries.Adapters
     public interface IChuckNorrisAdapter
     {
         List<string> GetCategories();
-        List<ChuckNorrisSearchResult> GetRandomJokeFromCategory(string tag);
+        ChuckNorrisSearchResult GetRandomJokeFromCategory(string tag);
         List<ChuckNorrisSearchResult> Search(string tag);
     }
 }
